@@ -1,13 +1,17 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "esnext",
-    "lib": ["esnext"],
+    "module": "CommonJS",
+    "lib": [
+      "esnext"
+    ],
     "strict": true,
     "outDir": "dist",
     "allowJs": true,
     "resolveJsonModule": true,
     "moduleResolution": "node"
   },
-  "include": ["src/**/*"]
+  "include": [
+    "src/**/*"
+  ]
 }

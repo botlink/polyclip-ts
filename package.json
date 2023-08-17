@@ -6,7 +6,6 @@
     "name": "Luiz Felipe Machado Barboza"
   },
   "license": "MIT",
-  "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "jsdelivr": "dist/polyclip-ts.umd.min.js",
@@ -39,7 +38,7 @@
     "preversion": "npm run test",
     "version": "npm run build && git add -A",
     "postversion": "git push && git push --tags && npm publish",
-    "build": "rollup -c && tsc --declaration true --declarationDir types",
+    "build": "yarn rollup -c && tsc --declaration true --declarationDir types",
     "test": "npm run test:typecheck && npm run test:lint && npm run test:jest",
     "test:lint": "eslint src",
     "test:typecheck": "tsc --noEmit",
@@ -63,7 +62,9 @@
     "eslint": "^8.16.0",
     "eslint-config-prettier": "^8.5.0",
     "jest": "^27.5.1",
-    "martinez-polygon-clipping": "^0.7.1"
+    "martinez-polygon-clipping": "^0.7.1",
+    "rollup": "^3.28.0",
+    "typescript": "^5.1.6"
   },
   "dependencies": {
     "bignumber.js": "^9.1.0",
