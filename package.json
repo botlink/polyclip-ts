@@ -69,6 +69,6 @@
   },
   "dependencies": {
     "bignumber.js": "^9.1.0",
-    "splaytree-ts": "^1.0.1"
+    "splaytree-ts": "https://github.com/botlink/splaytree-ts"
   }
 }
